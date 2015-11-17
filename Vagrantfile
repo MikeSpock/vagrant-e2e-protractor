@@ -6,7 +6,10 @@ Vagrant.configure("2") do |config|
       config.vm.provider :virtualbox do |vb|
         vb.memory = 1024
         vb.customize ["modifyvm", :id, "--hwvirtex", "on"]
-#        vb.customize ["modifyvm", :id, "--accelerate3d", "on"]
+
+# uncomment this if your computer / server supports it
+#       vb.customize ["modifyvm", :id, "--accelerate3d", "on"]
+
         vb.customize ["modifyvm", :id, "--accelerate2dvideo", "on"]
     end
 end
