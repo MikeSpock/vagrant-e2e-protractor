@@ -1,4 +1,3 @@
-cat /vagrant/vagrant/hosts.append | sudo tee -a /etc/hosts
 if [ ! -f /var/log/vagrantsetup ];
 then
     sudo apt-get update
